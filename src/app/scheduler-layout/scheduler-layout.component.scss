@@ -1,0 +1,46 @@
+:host{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    .thead {
+        display: flex;
+        border: 1px solid #eee;
+        background-color: #d9edf7;
+        border-bottom: 2px solid;
+
+    }
+    .week-row {
+        display: flex;
+        border: 1px solid #eee;
+        background-color: #fafafa;
+    }
+    .week-day {
+        width: 100px;
+        height: 30px;
+        flex-flow: row;
+        justify-content: space-around; 
+        padding: 10px;
+        
+    }
+
+    // td:first-child { border-right: 1px solid; };
+
+   
+
+    .value {
+        border-right: 1px solid;
+        cursor: pointer;
+    }
+
+    .table-hours {
+        font-size: 14px;
+        margin-top: 40px;
+        td {
+            width: 20px;
+            height: 32px;
+        }
+    }
+}

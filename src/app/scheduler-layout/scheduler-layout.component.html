@@ -1,0 +1,30 @@
+
+
+<div class="container">
+    <table class="table-hours">
+        <tr *ngFor="let t of timeStops">
+            <td>{{t}}</td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+           <tr class="thead">
+               <td class="week-day" *ngFor="let day of weekdays">
+                   {{day | date:'MMM d' }}
+               </td>
+           </tr>
+        </thead>
+        <tbody>
+            
+            <tr class="week-row" *ngFor="let w of newWeek;  let i = index">
+                <td class=" week-day value" *ngFor="let day of w" (click)="addTask(w[0], day)">
+                        {{day.eventName}}
+                        
+                    
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
